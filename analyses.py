@@ -4,6 +4,7 @@ from collections import Counter
 from tqdm import tqdm
 
 def analyse_nbtweets(data_file):
+	"""affiche les 50 utilisateurs les plus actifs du corpus de tweets dans top50.csv"""
 	directory = path.dirname(__file__)
 	path_to_file = path.join(directory, "data", data_file)
 
@@ -23,6 +24,7 @@ def analyse_nbtweets(data_file):
 			spamwriter.writerow({"Pseudo":user, "Nb de tweets":nb})
 
 def analyse_client(data_file):
+	"""affiche le pourcentage d'utilisateurs des clients Android et iPhone par appartenance politique affichée dans leur biographie dans iphonevsandroid.csv"""
 	directory = path.dirname(__file__)
 	path_to_file = path.join(directory, "data", data_file)
 

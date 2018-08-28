@@ -1,4 +1,4 @@
-import analyse as an
+import analyses as an
 import time
 
 
